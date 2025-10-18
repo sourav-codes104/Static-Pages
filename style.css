@@ -1,0 +1,71 @@
+/* Global styles */
+body {
+  margin: 0; /* Browser ka default margin hatane ke liye */
+  font-family: "Roboto", sans-serif; /* Import kiya gaya font apply karne ke liye */
+}
+
+/* Header container flex */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  background-color: rgb(220, 172, 131);
+  padding: 10px; /* Thodi padding add ki hai */
+}
+
+/* Logo styling same */
+.logo-design {
+  width: 150px;
+  border-radius: 100px;
+}
+
+/* Info container (Search box + button) */
+.info {
+  display: flex; /* YEH ADD KIYA GAYA - Search box aur button ko jodne ke liye */
+}
+
+/* Search box */
+.searchbox {
+  width: 300px;
+  height: 45px;
+  border: 2px solid #e6e1e1;
+  border-radius: 5px 0 0 5px;
+  padding: 0 10px;
+  font-size: 16px;
+  margin: 0;
+  outline: none;
+}
+
+/* Button style */
+.searchbutton {
+  width: 120px;
+  height: 45px;
+  border: 2px solid #e6e1e1;
+  border-left: none; /* YEH ADD KIYA GAYA - Double border hatane ke liye */
+  border-radius: 0 5px 5px 0;
+  font-size: 16px;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  margin: 0;
+}
+
+/* Image container */
+.image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px; /* Images ke padding-top ki jagah container par padding */
+  
+  /* YEH ADD KIYA GAYA - Responsiveness ke liye */
+  flex-wrap: wrap; /* Agar jagah na ho toh images niche aa jayengi */
+  gap: 20px; /* Images ke beech 20px ka gap (margin-right ki jagah) */
+}
+
+/* All images inside .image container */
+/* .img1, .img2, .img3 ki jagah yeh use karein */
+.image img {
+  width: 300px;
+  /* padding-top aur margin-right hata diya, kyonki woh .image container se handle ho raha hai */
+}
