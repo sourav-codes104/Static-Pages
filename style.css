@@ -43,7 +43,7 @@ body {
   width: 120px;
   height: 45px;
   border: 2px solid #e6e1e1;
-  border-left: none; /* YEH ADD KIYA GAYA - Double border hatane ke liye */
+   border-left: none; /*YEH ADD KIYA GAYA - Double border hatane ke liye */
   border-radius: 0 5px 5px 0;
   font-size: 16px;
   background-color: #f8f8f8;
@@ -51,21 +51,38 @@ body {
   margin: 0;
 }
 
-/* Image container */
-.image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px; /* Images ke padding-top ki jagah container par padding */
-  
-  /* YEH ADD KIYA GAYA - Responsiveness ke liye */
-  flex-wrap: wrap; /* Agar jagah na ho toh images niche aa jayengi */
-  gap: 20px; /* Images ke beech 20px ka gap (margin-right ki jagah) */
+/* sab kurta boxes ek grid me arrange honge */
+ .kurta-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns per row */
+  background-color: rgb(255, 255, 255);
+  padding-top: 30px;
+ }
+
+/* har ek kurta ka box */
+.kurta-section {
+  width: 280px;               /* fixed width for consistency */
+
+
 }
 
-/* All images inside .image container */
-/* .img1, .img2, .img3 ki jagah yeh use karein */
-.image img {
-  width: 300px;
-  /* padding-top aur margin-right hata diya, kyonki woh .image container se handle ho raha hai */
+/* image fix height me */
+.kurta-pic img {
+  width: 300px;            
+}
+/* name + price */
+.kurta-preview {
+  padding: 10px;
+}
+
+.kurta-info p {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 5px 0;
+}
+
+.kurta-price p {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
 }
